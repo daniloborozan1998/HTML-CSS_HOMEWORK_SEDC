@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <meta name="description" content="Christmas media">
+    <meta name="keywords" content="video, audio">
+    <meta name="robots" content="nofollow">
+    <meta name="author" content="Danilo Borozan">
+    <title>Christmas Music Website</title>
+
+    <style>
+        * {
+            border: 0px;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-image: url(./img/background.png);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            min-width: 1200px;
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-size: 85%;
+
+
+        }
+
+        header {
+            font-size: large;
+        }
+
+        .naslov {
+            color: #ffd11a;
+            text-align: center;
+        }
+
+        ul {
+            list-style: none;
+
+        }
+
+        .navbar {
+            background-color: rgb(8, 8, 53);
+            overflow: hidden;
+
+
+        }
+
+        .navbar a {
+            float: left;
+            color: #ffd11a;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 21px;
+        }
+
+        .navbar a:hover {
+            background-color: #00004d;
+            color: #ffd11a;
+        }
+
+        .navbar a.active {
+            background-color: #00004d;
+            color: #ffd11a;
+        }
+
+        .navbar-right {
+            float: right;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .najava {
+            float: right;
+        }
+
+        .image {
+            border: 0;
+            position: relative;
+        }
+
+        .image.fit {
+            display: block;
+        }
+
+        .image.fit img {
+            display: block;
+            width: 100%;
+        }
+
+        .image.feature {
+            display: block;
+            margin: 0 0 2em 0;
+        }
+
+        .image.feature img {
+            display: block;
+            width: 100%;
+        }
+
+        .image.featured {
+            position: static;
+            display: block;
+            margin: 0;
+        }
+
+        .image.featured img {
+            display: block;
+            width: 100%;
+        }
+
+
+        p {
+            line-height: 30px;
+            color: #ffd11a;
+        }
+
+        .container {
+            margin-left: auto;
+            margin-right: auto;
+
+
+            width: 1200px;
+        }
+
+
+
+        .container.small {
+
+            width: 900px;
+        }
+
+        .container.big {
+            width: 100%;
+
+
+            max-width: 1500px;
+
+            min-width: 1200px;
+        }
+
+
+        .\31 2u {
+            width: 100%
+        }
+
+        .\31 1u {
+            width: 91.6666666667%
+        }
+
+        .\31 0u {
+            width: 83.3333333333%
+        }
+
+        .\39 u {
+            width: 75%
+        }
+
+        .\38 u {
+            width: 66.6666666667%
+        }
+
+        .\37 u {
+            width: 58.3333333333%
+        }
+
+        .\36 u {
+            width: 50%
+        }
+
+        .\35 u {
+            width: 41.6666666667%
+        }
+
+        .\34 u {
+            width: 33.3333333333%
+        }
+
+        .\33 u {
+            width: 25%
+        }
+
+        .\32 u {
+            width: 16.6666666667%
+        }
+
+        .\31 u {
+            width: 8.3333333333%
+        }
+
+        .\-11u {
+            margin-left: 91.6666666667%
+        }
+
+        .\-10u {
+            margin-left: 83.3333333333%
+        }
+
+        .\-9u {
+            margin-left: 75%
+        }
+
+        .\-8u {
+            margin-left: 66.6666666667%
+        }
+
+        .\-7u {
+            margin-left: 58.3333333333%
+        }
+
+        .\-6u {
+            margin-left: 50%
+        }
+
+        .\-5u {
+            margin-left: 41.6666666667%
+        }
+
+        .\-4u {
+            margin-left: 33.3333333333%
+        }
+
+        .\-3u {
+            margin-left: 25%
+        }
+
+        .\-2u {
+            margin-left: 16.6666666667%
+        }
+
+        .\-1u {
+            margin-left: 8.3333333333%
+        }
+
+        .row>* {
+            float: left;
+        }
+
+        .row:after {
+            content: '';
+            display: block;
+            clear: both;
+            height: 0;
+        }
+
+        .row:first-child>* {
+            padding-top: 0 !important;
+        }
+
+
+
+        .row>* {
+
+            padding-left: 40px;
+        }
+
+        .row+.row>* {
+
+            padding: 40px 0 0 40px;
+        }
+
+        .row {
+
+            margin-left: -40px;
+        }
+
+
+
+        .row.flush>* {
+            padding-left: 0;
+        }
+
+        .row+.row.flush>* {
+            padding: 0;
+        }
+
+        .row.flush {
+            margin-left: 0;
+        }
+
+
+
+        .row.quarter>* {
+
+            padding-left: 10px;
+        }
+
+        .row+.row.quarter>* {
+
+            padding: 10px 0 0 10px;
+        }
+
+        .row.quarter {
+
+            margin-left: -10px;
+        }
+
+
+
+        .row.half>* {
+
+            padding-left: 20px;
+        }
+
+        .row+.row.half>* {
+
+            padding: 20px 0 0 20px;
+        }
+
+        .row.half {
+
+            margin-left: -20px;
+        }
+
+
+
+        .row.oneandhalf>* {
+
+            padding-left: 60px;
+        }
+
+        .row+.row.oneandhalf>* {
+
+            padding: 60px 0 0 60px;
+        }
+
+        .row.oneandhalf {
+
+            margin-left: -60px;
+        }
+
+        .row.double>* {
+
+            padding-left: 80px;
+        }
+
+        .row+.row.double>* {
+
+            padding: 80px 0 0 80px;
+        }
+
+        .row.double {
+
+            margin-left: -80px;
+        }
+
+        .box {
+            padding: 3em 2em;
+            background: rgba(1, 1, 97, 0.548);
+            text-align: center;
+            border-radius: 0px 0px 6px 6px;
+        }
+
+        #extra {
+            padding-top: 35px;
+            width: 900px;
+            margin: auto;
+        }
+
+        .button {
+            display: inline-block;
+            min-width: 100px;
+            padding: 20px  30px;
+            font-family: 'Lobster', cursive;
+            font-size: 26px;
+            line-height: 26px;
+            text-decoration: none;
+            color: #FFF;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.75);
+            background: #a81614;
+            outline: none;
+            border-radius: 15px;
+            border: 1px solid #4c0300;
+            position: relative;
+            overflow: visible;
+            -webkit-transition: 500ms linear;
+            -moz-transition: 500ms linear;
+            -o-transition: 500ms linear;
+            transition: 500ms linear;
+            
+        }
+
+        .button::before {
+            content: '';
+            position: absolute;
+            top: -7px;
+            left: -3px;
+            right: 0;
+            height: 23px;
+            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAAXCAYAAACS5bYWAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABFpJREFUeNrUV0tIo1cUvpkYjQ4xxSA6DxuNqG0dtaUKOgs3s6i0dFd3pSsXdjeIixakiGA34sZuXCkoONLFwJTK4GMYLYXg29gatTpiXurkbd7vv9/5ub+IxuhA7eiFQ5Kbc8/57ne/e87/ywRBYLdl3GG3aNwqsLJ0k0tLS+fmcnNzWUVFBVMoFGx2djarvLxcm5OTw+bm5iytra2xc4ExNjY27iqVyvvwK6CpeDzuCYVC1urq6qDA9UcfPp+PHR4esmAwKK6tr68/l5/8rgQ2Ozub1dbWyiYmJooaGxt/VqvV38jlchX9l0qlwoFA4DWS/RKLxRxFRUVf5+XlPcaaT2AP0sVPJBL2SCRiAPBpu93+vKamZo/Ae71eZjabWV1dXVqw7CKwp43ksrCw8Bhg7MJ/PLDZ5PHx8cz29vYT5JGD/bSYLgTrcDgYdk6siSc6NjZWDaAe4ZoHQL+cmZnRpZPnhWDpD8kw7uKo9ML/NMCsd2tr61vkzboMrEyv138M7TyLRqMWMBsX3sMgaZhMpp+AR5EJrCocDpuEGzKg4x8khs+CVWxubvZfR9JkMik4nU7BarUKLpeLmLsKuwIqTLynp4fqmIzASrqQT09Pf1VVVfX0KsWZ6uHBwQHTaDSsoKAgo6/H4xHLEcrVyRwuEisrKzs5XrrIVAVwiUVDKRRrL+YI32ewdVhMApuHWvcj6vids6J2u90MF4yBHUZNgKoEBaRBQalJqFSqtJfUYrGIlQX+ydXVVTN+u0tKSjQNDQ1axJVl2iTypebn55d7e3v/kqoDgZU1NTU9LCws/Py0M+2ekuGincxJ3yF+18jIyHJLS0slQJUWFxczrBeBE0vE5tHRkbixlZWVfSR8gTX/0P5gH7S1tX3Z3t7+BW8qAvwSfr8/jA0EIRM/qoFtampqbW9vTw+XA+ojUruVd3Z2tvb19T2TQFEim81GgVJoCvvj4+NLOJZgaWmpemdn5y3a6BbcnJDAw8HBwac6ne6eqCW5XDwB3qVSqM9/DAwMUNy/eVLabT7sI25qwgujThCBhWE+mAt2yNc4SQKSZrOQQE1HS22VJkmPAGTr7+//fX19fRk+Zgq0trbGeFAKEAQT98BSqKOj47vm5uaa/Px8JeIk4GcaHh6eWlxcfAU/A8xG67BxAX3fwdcbYUpSDJ06Z49Ak8ZC3OL8f3YiA4PBYKdLQ2AJ9OTk5GpXV9cQiCVh79M94QtlPLDUE/1gPNrd3f0W33W4cBoco48zQuy/IZYAMnGqlSc4c66L9JruQUaSARXeT8HGKzxAqFBekni6+h46+pMzGiJGMgTOJh1yU/KNEGDvZWvfBawkA9ppwGg0mrRa7SOI2g+gxOgbJIpdFpj72PnxSnPX8vqRxTURgBQWKisrH+GThOm+CtAzoK/9/Uiqq/6hoaHfdnd3jaOjo7/yY7yxbwqkWy3sQzpS2C6YirwvUJk0y7hurfyGRrnduPGvAAMASmo8wzeVwfsAAAAASUVORK5CYII=) no-repeat 0 0,
+                url(data:image/png;base64,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) no-repeat 50% 0,
+                url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAXCAYAAACFxybfAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAodJREFUeNrsVb1rWlEUv2pN/GqspKRSKFYXWzEloIWif0Fn6dJChQ7OQil0qd3EzcEpg0OgdHDr4CQODk7VRlLMEIVqApX4We0zflR9/Z1Ui4T34ksaaAYP/Hzc673n/M6550PG8zz73yKjn0wm83fDYDAwo9HINBrNnwOQg4MDs0ql2lQqlfdAWont7ng8Pjw+Ps44nc4G1pI9EXWaSOzt7TGO42aH5Pv7+08ajUZ0MBiUeXEZd7vdL5VK5fX29rZ+5tQiEmdxKrlcjsEYczgcynK5/BKKv/IXFNz/XiqVXkHdjUuRIA9SqdRD8or/R8Ez9fr9fqHVakUR4c2z0REjIQuHw2ZcrPBXLCA0RHTezEdHjIQqkUhEr9I4HOILhQLf6/VoOUFEvDMiQiToDx1Cdz+bzZ6bUFarlel0OkkVUK/XWbvdPoVer5fh3ntsfwJ+CJ2XA4p0Op1bpBgJyxDehQQ6nQ5DZXHBYDBZq9V+EhFUndnr9drEqoc2bwJbwGPgtohuVSwWe2Gz2TZMJpNgRKi6qtUqg2EWj8dTgUDgo0KhWPN4PC70EvXOzs67fD6/S6kiRIKeZA1YJ2MiJNbdbvfTUCjkV6vVK2hcDF8GI2w0GrGTkxM2HA5PDxaLxSOfz/cWEfk81X0XIMMFgJJ/srBjCgk8IdcfuVyuZ36//7nFYtkQyAMumUzuRiKRD0jMFLa+AZOpYwqgB/ziBVqmVBKUO7eAB/R0WG/Z7XaTVqtdbTabHJL6EK2djBaBPHA0NSqpbUsiMUeEBgpF4Q5AbZrmSJ/yEWgBTaBNHl9kdkgmMUeG7qwAq9PqovceTA3zlxlgsuswyuXsGsiSxJLEkoSY/BZgAEjRodi+uBruAAAAAElFTkSuQmCC) no-repeat 100% 0;
+
+        }
+
+        .button:hover {
+            background: #a61715;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.75), 0 0 40px #FFF;
+        }
+
+        .kopce {
+
+            width: 180px;
+            margin: auto;
+            padding-top: 70px;
+            text-align: center;
+        }
+        footer p {
+            color: #ffd11a;
+            padding-top: 50px;
+            color: #ffd11a;
+            height: 100px;
+            line-height: 120px;
+            text-align: center;
+            font-size: 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="naslov">Christmas Media</h1>
+
+    </header>
+    <nav>
+        <div class="navbar">
+            <ul>
+                <li> <a class="active" href="index.html">Home</a></li>
+                <li> <a href="video.html">Video</a></li>
+                <li> <a href="music.html">Music</a></li>
+                <li> <a href="contact.html">Contact</a></li>
+                <li class="najava"> <a href="login.html">LogIn</a></li>
+                <li class="najava"> <a href="singup.html">SingUp</a></li>
+        </div>
+    </nav>
+    <div id="extra">
+        <div class="container">
+            <div class="row no-collapse-1">
+                <section class="4u"><iframe width="410" height="225" src="https://www.youtube.com/embed/ZDqWLfVein4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="box">
+                        <p>Artist: Mariah Carey <br>
+                            Album: Merry Christmas<br>
+                            Released: 1994 Trending<br>
+                            Recorded: August 1994<br>
+                        </p>
+                        <a href="#" class="button">Read More</a>
+                    </div>
+                </section>
+                <section class="4u"><iframe width="410" height="225" src="https://www.youtube.com/embed/uC9Slitz5EY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="box">
+                        <p>Artist: Train <br>
+                            Album: Save Me, San Francisco <br>
+                            Released: 2009 <br>
+                            Genre: Seasonal</p>
+                        <a href="#" class="button">Read More</a>
+                    </div>
+                </section>
+            </div>
+            <div class="row no-collapse-1">
+                <section class="4u"><iframe width="410" height="225" src="https://www.youtube.com/embed/DPdXClmzL54" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="box">
+                        <p>Artist: Wham! <br>
+                            Album: Sanremo ’85<br>
+                            Released: 1985<br>
+                            Genre: Pop<br>
+                            Nominations: Brit Award for British Video of the Year.</p>
+                        <a href="#" class="button">Read More</a>
+                    </div>
+                </section>
+                <section class="4u"> <iframe width="410" height="225" src="https://www.youtube.com/embed/XurfvD1kmQA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="box">
+                        <p>Artist: Hall & Oates <br>
+                            Album: Home for Christmas<br>
+                            Released: 2006<br>
+                            Genre: Seasonal</p>
+                        <a href="#" class="button">Read More</a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>© 2020 by Danilo Borozan. </p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/all.min.css">
+    <title>Christmas Music Website</title>
+
+    <style>
+        * {
+            border: 0px;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-image: url(./img/background.png);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-size: 85%;
+        }
+
+        header {
+            font-size: large;
+        }
+
+        .naslov {
+            color: #ffd11a;
+            text-align: center;
+        }
+
+        ul {
+            list-style: none;
+
+        }
+
+        .navbar {
+            background-color: rgb(8, 8, 53);
+            overflow: hidden;
+
+
+        }
+
+        .navbar a {
+            float: left;
+            color: #ffd11a;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 21px;
+        }
+
+        .navbar a:hover {
+            background-color: #00004d;
+            color: #ffd11a;
+        }
+
+        .navbar a.active {
+            background-color: #00004d;
+            color: #ffd11a;
+        }
+
+        .navbar-right {
+            float: right;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .najava {
+            float: right;
+        }
+
+        .tekst {
+            margin: 20px;
+            padding: 20px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: #ffd11a;
+            border-radius: 3px;
+            font-size: 28px;
+            color: #ffd11a;
+            text-align: center;
+        }
+
+        .pesni {
+            margin: 20px;
+            padding: 0px;
+            height: 34px;
+        }
+
+        .audio-panel {
+            border: none !important;
+        }
+
+        #playlist{
+            margin-left: auto;
+            margin-right: auto;
+            width:80%;
+            text-align: center;
+            font-size: large;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 15px 15px 15px 15px;
+            list-style: none;
+            padding: 20px;
+            padding-top: 20px;
+        }
+        audio {
+            width: 100%;
+        }
+
+        li {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        li a {
+            transition: all 0.5s;
+            display: block;
+            text-decoration: none;
+        }
+
+        .list-group-item a {
+            text-decoration: none;
+            color: #ffd11a;
+        }
+
+        li:hover {
+            background-color: rgb(2, 4, 88);
+        }
+
+        li a:hover {
+            text-decoration: none;
+            color:white;
+        }
+
+        a {
+            color: #ffd11a;
+            text-decoration: none;
+        }
+        .divslika{
+            width: 300px;
+            margin: auto;
+        }
+        .prvaslika{
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="naslov">Christmas Media</h1>
+
+    </header>
+    <nav>
+        <div class="navbar">
+            <ul>
+                <li> <a class="active" href="index.html">Home</a></li>
+                <li> <a href="video.html">Video</a></li>
+                <li> <a href="music.html">Music</a></li>
+                <li> <a href="contact.html">Contact</a></li>
+                <li class="najava"> <a href="login.html">LogIn</a></li>
+                <li class="najava"> <a href="singup.html">SingUp</a></li>
+        </div>
+    </nav>
+    <div class="divslika">
+        <img src="./img/playlist.png" alt="" class="prvaslika">
+    </div>
+
+    <div class="tekst">Merry Christmas 2021 and Enjoy the best Christmas songs</div>
+
+    <div class="pesni panel-default audio-panel">
+        <audio id="audio" preload="auto" tabindex="0" controls loop>
+            <source src="./audio/Christmas carols - remix.mp3">
+        </audio>
+    </div>
+    <ul id="playlist">
+        
+        <li class="list-group-item">
+             <a href="./audio/Christmas carols - remix.mp3">
+                <p style="float: left;">Wham! - Last Christmas</p><p style="float: right;">00:00:00</p><br>
+             </a>
+         </li>
+         <li class="list-group-item">
+             <a href="./audio/Christmas carols - remix.mp3">
+                <p style="float: left;" >We Wish You a Merry Christmas</p><p style="float: right;">00:04:37</p><br>
+             </a>
+         </li>
+         <li class="list-group-item">
+             <a href="./audio/Christmas carols - remix.mp3">
+                <p style="float: left;" >All I Want For Christmas Is You </p><p style="float: right;">00:07:52</p><br>
+             </a>
+         </li>
+         <li class="list-group-item">
+            <a href="./audio/Christmas carols - remix.mp3">
+               <p style="float: left;" >Jingle Bells </p><p style="float: right;">00:11:47 </p><br>
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="./audio/Christmas carols - remix.mp3">
+               <p style="float: left;" >Christmas Wrapping</p><p style="float: right;">00:14:27 </p><br>
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="./audio/Christmas carols - remix.mp3">
+               <p style="float: left;" >Jingle Bell Rock</p><p style="float: right;">00:18:58</p><br>
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="./audio/Christmas carols - remix.mp3">
+               <p style="float: left;" >Pentatonix</p><p style="float: right;">00:21:11</p><br>
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="./audio/Christmas carols - remix.mp3">
+               <p style="float: left;" >Last Christmas [Carly Rae Jepson]</p><p style="float: right;">00:25:11</p><br>
+            </a>
+        </li>
+            
+     </ul>
+
+    </ul>
+
+
+
+</body>
+
+</html>
