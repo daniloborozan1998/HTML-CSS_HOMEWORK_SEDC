@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testform</title>
+
+    <style>
+        body {
+            width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        label {
+            font-size: 20px;
+        }
+
+        header {
+            border: 1px solid black;
+            background-color: lightgray;
+        }
+
+        div {
+            border: 1px solid black;
+        }
+
+        footer {
+            border: 1px solid black;
+            background-color: lightgray;
+            text-align: right;
+        }
+        #pw {
+            margin-left: 300px;
+        }
+
+        #name {
+            margin-left: 286px;
+        }
+
+        #last {
+            margin-left: 289px;
+        }
+
+        #email {
+            margin-left: 335px;
+        }
+
+        #birthday {
+            margin-left: 307px;
+        }
+
+        #male {
+            margin-left: 325px;
+        }
+
+        #female {
+            margin-left: 388px;
+        }
+
+        #question {
+            margin-left: 240px;
+        }
+
+        #answer {
+            margin-left: 172px;
+        }
+
+        #file {
+            margin-left: 164px;
+        }
+
+        #Breakfast {
+            margin-left: 326px;
+        }
+
+        #dinner {
+            margin-left: 384px;
+        }
+        #week{
+            margin-left: 112px;
+        }
+        #time{
+            margin-left: 119px;
+        }
+        #color{
+            margin-left: 331px;
+        }
+        #area{
+            margin-left: 310px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Testform</h1>
+    </header>
+    <div>
+        <br>
+        <form action="">
+            <label for="name">First Name: </label>
+            <input type="text" name="name" id="name" placeholder="Enter your Firs name" required>
+            <br>
+            <br>
+            <label for="last">Last Name:</label>
+            <input type="text" name="last" id="last" placeholder="Enter your Last name" required>
+            <br>
+            <br>
+            <label for="pw">Password:</label>
+            <input type="password" name="pw" id="pw" size="29" placeholder="Must be between to 8-20 characters"
+                required>
+            <br><br>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" size="23" placeholder="example@email.com" required>
+            <br><br>
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday" max="2002-12-03" required>
+            <br><br>
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender" id="male" value="male" checked="checked">
+            <label for="male">Male</label>
+            <br><br>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>
+            <br><br>
+            <label for="question">Security question</label>
+            <select name="question" id="question" required>
+                <option disabled selected>Please select one of the following options</option>
+                <option value="q1">What is the city you were born in?</option>
+                <option value="q2">What is your first pet name?</option>
+                <option value="q3">What is your favourite pet?</option>
+                <option value="q4">What is chilhood nickname?</option>
+                <option value="q5">What is your best friend?</option>
+            </select>
+            <br>
+            <br>
+            <label for="answer">Security question answer:</label>
+            <input type="text" name="answer" id="answer" placeholder="Please enter your answer" required>
+            <br><br>
+            <label for="meals">Meals:</label>
+            <input type="checkbox" name="meals" id="Breakfast" value="Breakfast" checked="checked" />
+            <label for="iTunes">Breakfast</label>
+            <br>
+            <input type="checkbox" name="meals" id="dinner" value="dinner" />
+            <label for="Spotify">Lunch</label>
+            <br>
+            <input type="checkbox" name="meals" id="dinner" value="dinner" />
+            <label for="YouTube">Dinner</label>
+            <br><br>
+            <label for="week">Choose a week for your meeting:</label>
+            <input id="week" type="week" name="week" value="2020-W50" min="2020-W50" required>
+            <br><br>
+            <label for="time">Choose a time for your meeting:</label>
+            <input type="time" id="time" name="time" min="10:00" max="21:00" required>
+            <br><br>
+            <label for="file">Choose a image to upload:</label>
+            <input type="file" name="file" id="file">
+            <br><br>
+            <label for="color">Color</label>
+            <input type="color" name="color" id="color">
+            <br>
+            <br>
+            <label for="area" id="areatext">Remark:</label>
+            <textarea name="area" id="area" cols="20" rows="5"></textarea>
+            <br><br>
+            <label for="range">Please choose a value form the slider:</label>
+            <input type="range" list="tickmarks">
+            <datalist id="tickmarks">
+                <option value="0" label="0%"></option>
+                <option value="10"></option>
+                <option value="20"></option>
+                <option value="30"></option>
+                <option value="40"></option>
+                <option value="50" label="50%"></option>
+                <option value="60"></option>
+                <option value="70"></option>
+                <option value="80"></option>
+                <option value="90"></option>
+                <option value="100" label="100%"></option>
+            </datalist>
+            <br>
+            <br>
+
+
+
+        </form>
+    </div>
+    <footer>
+        <form action="" id="footer">
+            <button type="submit" name="submit" id="submit" value="Submite Forms">Send</button>
+            <button type="reset" name="reset" id="reset" value="Reset Forms">Cancel</button>
+        </form>
+    </footer>
+
+</body>
+
+</html>
