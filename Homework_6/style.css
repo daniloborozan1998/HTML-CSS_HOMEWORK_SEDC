@@ -1,0 +1,209 @@
+    * {
+        padding: 0px;
+        margin: 0px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    
+    body {
+        background-image: url(https://img.freepik.com/free-vector/hand-drawn-winter-background_52683-49168.jpg?size=626&ext=jpg);
+    }
+    
+    header {
+        text-align: center;
+        padding-top: 50px;
+        width: 400px;
+        margin: auto;
+    }
+    
+    .naslov {
+        border-top: 6px double rgb(98, 195, 228);
+        border-left: 6px solid rgb(56, 132, 158);
+        border-right: 6px solid gold;
+        border-bottom: 6px solid rgb(135, 185, 34);
+        background-color: lightblue;
+        width: 280px;
+        padding: 10px;
+        text-shadow: 3px -2px 2px white;
+    }
+    
+    .sliki {
+        margin: auto;
+        width: 1000px;
+        padding-top: 100px;
+    }
+    
+    img {
+        width: 250px;
+        height: 200px;
+        margin: 25px;
+        border: 5px dotted black;
+    }
+    
+    img:hover {
+        width: 220px;
+        padding: 10px;
+        cursor: pointer;
+    }
+    
+    .slika2 {
+        margin-bottom: 50px;
+    }
+    
+    .paragrafi {
+        padding-top: 50px;
+        width: 900px;
+        margin: auto;
+    }
+    
+    div {
+        margin: 20px;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .divPrv {
+        width: 203px;
+        float: left;
+        background-color: ivory;
+        border: 5px dashed black;
+    }
+    
+    .divVtor {
+        width: 203px;
+        float: left;
+        background-color: green;
+        outline: 5px dashed black;
+    }
+    
+    .divTret {
+        width: 203px;
+        float: left;
+        background-color: green;
+        border: 5px dashed black;
+    }
+    
+    .paragrafi p {
+        color: white;
+        padding: 10px;
+        font-size: 28px;
+    }
+    
+    .prvP {
+        background-color: green;
+        font-weight: bolder;
+    }
+    
+    .vtorP {
+        font-weight: bolder;
+    }
+    
+    .tretP {
+        font-weight: bolder;
+    }
+    
+    .meni {
+        width: 1000px;
+        height: 200px;
+        margin: auto;
+    }
+    
+    hr.new2 {
+        border: 1px dashed green;
+    }
+    
+    .bonusNaslov {
+        color: black;
+        font-weight: bolder;
+        padding-top: 25px;
+        text-align: center;
+    }
+    
+    .acidic {
+        text-align: center;
+        padding-top: 50px;
+        width: 340px;
+        margin: auto;
+    }
+    
+    .scale {
+        border-top: 6px double rgb(98, 195, 228);
+        border-left: 6px solid rgb(56, 132, 158);
+        border-right: 6px solid gold;
+        border-bottom: 6px solid rgb(135, 185, 34);
+        background-color: lightblue;
+        width: 280px;
+        padding: 10px;
+        text-shadow: 3px -2px 2px white;
+    }
+    
+    .spectral {
+        width: 600px;
+        margin: auto;
+    }
+    
+    .spectral p {
+        margin: 0px;
+        text-align: right;
+        color: white;
+        font-weight: bold;
+    }
+    
+    .prv {
+        background-color: #1f57ff;
+    }
+    
+    .vtor {
+        background-color: #0080ff;
+    }
+    
+    .tret {
+        background-color: rgb(10, 194, 255);
+    }
+    
+    .cet {
+        background-color: rgb(33, 184, 235);
+    }
+    
+    .pet {
+        background-color: rgb(86, 182, 214);
+    }
+    
+    .sesti {
+        background-color: rgb(111, 188, 214);
+    }
+    
+    .sedmi {
+        background-color: rgb(140, 198, 218);
+    }
+    
+    .osmi {
+        background-color: green;
+    }
+    
+    .deveti {
+        background-color: lightpink;
+    }
+    
+    .deseti {
+        background-color: rgb(243, 141, 158);
+    }
+    
+    .dvanajsti {
+        background-color: rgb(240, 122, 142);
+    }
+    
+    .trinajsti {
+        background-color: rgb(243, 111, 133);
+    }
+    
+    .cetirinaesti {
+        background-color: rgb(243, 93, 118);
+    }
+    
+    .petnaesti {
+        background-color: rgb(241, 68, 97);
+    }
+    
+    .sesnaesti {
+        background-color: rgb(241, 50, 82);
+    }
