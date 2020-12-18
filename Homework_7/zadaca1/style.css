@@ -1,0 +1,78 @@
+body {
+    width: 900px;
+    height: 640px;
+    margin: auto;
+}
+
+.meni {
+    margin-top: 20px;
+    border: 5px solid rgb(243, 237, 227);
+    width: 900px;
+    height: 640px;
+}
+
+.levo-gore {
+    width: 204px;
+    height: 180px;
+    background-color: wheat;
+    border: 5px solid black;
+    position: absolute;
+    float: left;
+}
+
+.desno-meni {
+    width: 680px;
+    height: 422px;
+    float: right;
+    position: relative;
+    border: 4px solid black;
+    background-color: tomato;
+}
+
+.levo-sredina {
+    width: 203px;
+    height: 230px;
+    margin-top: 190px;
+    background-color: blanchedalmond;
+    position: absolute;
+    border: 5px solid black;
+}
+
+.levo-dolu {
+    width: 203px;
+    height: 201px;
+    margin-top: 430px;
+    background-color: rgb(8, 129, 199);
+    position: absolute;
+    border: 5px solid black;
+}
+
+.sredina-dolu {
+    width: 640px;
+    height: 201px;
+    margin-top: 430px;
+    margin-left: 213px;
+    background-color: blanchedalmond;
+    position: absolute;
+    border: 5px solid black;
+}
+
+.desno-dolu {
+    width: 27px;
+    height: 100px;
+    border: 5px solid black;
+    background-color: blanchedalmond;
+    position: absolute;
+    margin-top: 430px;
+    margin-left: 863px;
+}
+
+.desno-dolu2 {
+    width: 27px;
+    height: 92px;
+    border: 5px solid black;
+    background-color: yellow;
+    position: absolute;
+    margin-top: 539px;
+    margin-left: 863px;
+}
