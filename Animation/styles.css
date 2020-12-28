@@ -1,0 +1,307 @@
+            body {
+                margin: 0%;
+                padding: 0%;
+            }
+            
+            h1 {
+                text-align: center;
+            }
+            
+            .prv {
+                width: 500px;
+                height: 300px;
+                float: left;
+                border: 2px solid black;
+                margin-left: 250px;
+                background-color: rgb(151, 12, 12);
+            }
+            
+            .prv1 {
+                margin-top: 140px;
+                margin-left: 170px;
+                width: 150px;
+                height: 30px;
+                text-align: center;
+            }
+            
+            .prv p {
+                color: white;
+                background-color: brown;
+                padding: 10px;
+            }
+            
+            p {
+                position: relative;
+            }
+            
+            .paragraf {
+                overflow: hidden;
+                position: relative;
+            }
+            
+            .paragraf::before {
+                content: '';
+                box-sizing: border-box;
+                position: absolute;
+                border-top: 5px solid transparent;
+                border-bottom: 5px solid transparent;
+                width: 0px;
+                height: 39px;
+            }
+            
+            .paragraf::before {
+                top: 0;
+                left: 0;
+                border-top-color: white;
+                border-bottom-color: white;
+                border-radius: 2px;
+                animation: border 5s infinite ease-out;
+                -webkit-animation: border 5s infinite ease-out;
+                -webkit-border-radius: 2px;
+                -moz-border-radius: 2px;
+                -ms-border-radius: 2px;
+                -o-border-radius: 2px;
+            }
+            
+            @keyframes border {
+                0% {
+                    width: 0;
+                }
+                50% {
+                    opacity: 1;
+                }
+                75% {
+                    opacity: 0.7;
+                }
+                100% {
+                    width: 100%;
+                    opacity: 0.3;
+                }
+            }
+            
+            .vtor {
+                display: flex;
+                width: 500px;
+                height: 300px;
+                border: 2px solid black;
+                float: left;
+                background-color: rgb(190, 16, 16);
+            }
+            
+            .vtor1 {
+                margin-top: 130px;
+                margin-left: 170px;
+                width: 150px;
+                height: 30px;
+                text-align: center;
+            }
+            
+            .vtor1 p {
+                color: white;
+                background-color: brown;
+                padding: 10px;
+            }
+            
+            .paragraf1 {
+                overflow: hidden;
+                position: relative;
+            }
+            
+            .paragraf1::before {
+                content: '';
+                box-sizing: border-box;
+                position: absolute;
+                background-color: white;
+                width: 0px;
+                height: 39px;
+            }
+            
+            .paragraf1::before {
+                top: 0;
+                left: 0;
+                border-top-color: white;
+                border-bottom-color: white;
+                border-radius: 2px;
+                animation: loading 5s infinite ease-out;
+                -webkit-animation: loading 5s infinite ease-out;
+                -webkit-border-radius: 2px;
+                -moz-border-radius: 2px;
+                -ms-border-radius: 2px;
+                -o-border-radius: 2px;
+            }
+            
+            @keyframes loading {
+                0% {
+                    width: 0;
+                }
+                100% {
+                    width: 100%;
+                }
+            }
+            
+            .tret {
+                width: 500px;
+                height: 300px;
+                float: left;
+                border: 2px solid black;
+                margin-left: 250px;
+                background-color: rgb(151, 12, 12);
+            }
+            
+            .circles {
+                position: relative;
+                top: 40px;
+                left: 200px;
+            }
+            
+            .spinner {
+                background-color: white;
+                border-radius: 50%;
+                width: 20px;
+                height: 20px;
+                margin-top: 100px;
+                margin-left: 2px;
+                display: inline-block;
+                position: absolute;
+                animation: spin ease-in-out 2s infinite;
+            }
+            
+            .div1 {
+                background-color: rgba(255, 255, 255, 0.8);
+                border-radius: 50%;
+                width: 20px;
+                height: 20px;
+                margin-top: 0px;
+                margin-right: 0px;
+                display: inline-block;
+                position: absolute;
+                right: 35px;
+            }
+            
+            .div3 {
+                background-color: rgba(255, 255, 255, 0.8);
+                border-radius: 50%;
+                width: 20px;
+                height: 20px;
+                margin-top: 0px;
+                margin-left: 0px;
+                display: inline-block;
+                position: absolute;
+                left: 35px;
+            }
+            
+            @keyframes spin {
+                0% {
+                    transform: rotate(0deg);
+                    transform-origin: center;
+                }
+                100% {
+                    transform: rotate(360deg);
+                    transform-origin: center;
+                }
+            }
+            
+            .cetvrt {
+                display: flex;
+                width: 500px;
+                height: 300px;
+                border: 2px solid black;
+                float: left;
+                background-color: rgb(151, 12, 12);
+            }
+            
+            .cetvrt1 div {
+                color: white;
+                background-color: brown;
+                padding: 10px;
+            }
+            
+            .kocka::before {
+                content: '';
+                box-sizing: border-box;
+                position: absolute;
+                background-color: white;
+                width: 0px;
+                height: 120px;
+            }
+            
+            .kocka::before {
+                top: 0;
+                left: 0;
+                border-top-color: white;
+                border-bottom-color: white;
+                border-radius: 2px;
+                animation: loading 5s infinite ease-out;
+                -webkit-animation: loading 5s infinite ease-out;
+                -webkit-border-radius: 2px;
+                -moz-border-radius: 2px;
+                -ms-border-radius: 2px;
+                -o-border-radius: 2px;
+            }
+            
+            @keyframes loading {
+                0% {
+                    width: 0;
+                }
+                50% {
+                    opacity: 1;
+                }
+                75% {
+                    opacity: 0.6;
+                }
+                100% {
+                    width: 100%;
+                    opacity: 0.4;
+                }
+            }
+            
+            .topka {
+                background-color: white;
+                width: 1px;
+                height: 1px;
+                border-radius: 50%;
+                animation-name: myanimation;
+                animation-duration: 4s;
+                animation-iteration-count: infinite;
+                position: relative;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+            }
+            
+            .kocka {
+                width: 100px;
+                height: 100px;
+                position: absolute;
+                margin-top: 100px;
+                margin-left: 200px;
+            }
+            
+            @keyframes myanimation {
+                0% {
+                    background-color: white;
+                    left: -35px;
+                    top: -35px;
+                }
+                25% {
+                    background-color: white;
+                    left: 110px;
+                    top: -35px;
+                }
+                50% {
+                    background-color: white;
+                    left: 110px;
+                    top: 110px;
+                }
+                75% {
+                    background-color: white;
+                    left: -35px;
+                    top: 110px;
+                }
+                100% {
+                    background-color: white;
+                    left: -35px;
+                    top: -35px;
+                }
+            }
